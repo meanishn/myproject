@@ -1,0 +1,21 @@
+#post-list {
+    padding: 0px;
+    list-style-type: none;
+}
+.post-displaybox {
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #BED7C1;
+}
+
+.small-txt{
+    padding-top: 10px;
+    line-height: 90%;
+}
+.well{
+    background-color: #FAFAFA;
+}
+
+img{
+    opacity: 0.4;
+}
