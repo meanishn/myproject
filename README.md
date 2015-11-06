@@ -1,37 +1,18 @@
+An ongoing scheduling application as a learning project implemented in django, python.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Welcome to your Django project on Cloud9 IDE!
-
-Your Django project is already fully setup. Just click the "Run" button to start
-the application. On first run you will be asked to create an admin user. You can
-access your application from 'https://schedule-meanishn.c9.io/' and the admin page from 
-'https://schedule-meanishn.c9.io/admin'.
-
-## Starting from the Terminal
-
-In case you want to run your Django application from the terminal just run:
-
-1) Run syncdb command to sync models to database and create Django's default superuser and auth system
-
-    $ python manage.py syncdb
-
-2) Run Django
-
-    $ python manage.py runserver $IP:$PORT
+Introduction:
+    This application lets user(employer) to upload an existing excel file that holds the schedule of employees and transform the schedule of each employee into monthly calendar.
     
-## Support & Documentation
+    The application assumes a fixed layout excel file for the purpose of demo with the actual employee schedule data to start from row 13 and date field to be at row 8.
+    All these excel fields are transformed to django database and displayed in a calendar form clearly showing the work day and free day.
+    
+Basic Usage:
+    1. User(employer) uploads excel file.
+    2. Excel file is processed into database
+    3. User(employees) login with their credentials
+    4. a monthly calendar is displayed to each user with their respective work schedule
+    5. each day cell of calendar represent whether its working day or free day with different coloring.
+    
 
-Django docs can be found at https://www.djangoproject.com/
-
-You may also want to follow the Django tutorial to create your first application:
-https://docs.djangoproject.com/en/1.7/intro/tutorial01/
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+copyright Anish.
+    
